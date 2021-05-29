@@ -1,0 +1,49 @@
+{
+  "name": "commit-me",
+  "version": "1.0.0",
+  "description": "Simple git commit CLi",
+  "main": "dist/index.js",
+  "bin": {
+    "commitme": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build:clean": "npm run clean && npm run build",
+    "link": "rm -rf $(which commitme) && npm run build:clean && npm link",
+    "start": "npm run build:clean && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roziscoding/commit-me.git"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "cli"
+  ],
+  "author": "Roz <roz@rjmunhoz.me>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/roziscoding/commit-me/issues"
+  },
+  "homepage": "https://github.com/roziscoding/commit-me#readme",
+  "devDependencies": {
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^15.6.1",
+    "@types/rc": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "prettier": "^2.3.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.0",
+    "rc": "^1.2.8"
+  }
+}
