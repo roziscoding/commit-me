@@ -1,11 +1,9 @@
 {
-  "name": "commit-me",
+  "name": "commitme",
   "version": "1.0.0",
   "description": "Simple git commit CLi",
   "main": "dist/index.js",
-  "bin": {
-    "commitme": "dist/index.js"
-  },
+  "bin": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
