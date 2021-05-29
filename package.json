@@ -45,5 +45,9 @@
   "dependencies": {
     "inquirer": "^8.1.0",
     "rc": "^1.2.8"
+  },
+  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
   }
 }

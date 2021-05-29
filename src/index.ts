@@ -20,7 +20,7 @@ type Answers = {
 
 const DEFAULT_CHOICES: ListChoiceOptions[] = [
   { value: '✨', name: '✨ Affects the UX' },
-  { value: '🔧', name: '🔧 Affects the DX' },
+  { value: '💻', name: '🔧 Affects the DX' },
   { value: '🤖', name: '🤖 Related to automated testing' },
   { value: '⏪', name: '⏪ Reverts a previous change' }
 ]

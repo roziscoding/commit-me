@@ -1,5 +1,6 @@
 {
   "choices": [
-    { "value": "🎊", "name": "Initial commit" }
+    { "value": "🎊", "name": "Initial commit" },
+    { "value": "📦", "name": "Update package configs" }
   ]
 }
