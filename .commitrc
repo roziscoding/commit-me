@@ -1,7 +1,9 @@
 {
+  "$schema": "./config-schema.json",
   "choices": [
     { "value": "🎊", "name": "Initial commit" },
     { "value": "📦", "name": "Update package configs" },
-    { "value": "🐛", "name": "Fixes something that wasn't right" }
+    { "value": "🐛", "name": "Fixes something that wasn't right" },
+    { "value": "🚀", "name": "Publishing new version" }
   ]
 }
