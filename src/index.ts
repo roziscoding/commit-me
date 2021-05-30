@@ -3,10 +3,39 @@ import { execSync } from 'child_process'
 import { ListChoiceOptions, prompt } from 'inquirer'
 import rc from 'rc'
 
-type Config = {
-  choices: ListChoiceOptions[]
+export type Choice = {
+  /**
+   * The name of the choice to show to the user.
+   */
+  name?: string
+
+  /**
+   * The emoji that represents the choice
+   */
+  value?: string
+
+  /**
+   * The short form of the name of the choice.
+   */
+  short?: string
+}
+
+export type Config = {
+  /**
+   * List of choices for the current folder.
+   */
+  choices: Choice[]
+  /**
+   * Wether to merge with or replace default choices.
+   */
   replaceDefaultChoices: boolean
+  /**
+   * If true, runs `git add --all` before commiting. Intended for usage as a CLI flag.
+   */
   a: boolean
+  /**
+   * If true, only prints the generated commit message instead of calling git.
+   */
   print: boolean
   [key: string]: any
 }
