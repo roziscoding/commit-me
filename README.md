@@ -15,7 +15,8 @@ Create a `.commitrc` on the root of your project to customize the choices.
 Add this to your VSCode config file in order to get autocomplete for the config file:
 
 ```json
-"files.associations": {
+{
+  "files.associations": {
     ".commitrc": "jsonc"
   },
   "json.schemas": [
@@ -24,6 +25,7 @@ Add this to your VSCode config file in order to get autocomplete for the config 
       "url": "https://raw.githubusercontent.com/roziscoding/commit-me/main/config-schema.json"
     }
   ]
+}
 ```
 
 ## Options
@@ -44,7 +46,7 @@ Add this to your VSCode config file in order to get autocomplete for the config 
 
 - `--print`: Prints the commit message, instead of caling git (will ignore the `-a` flag)
 
-# Contributor
+# Contributors
 
 - @roziscoding: Creator of this package
 - @gustavopch: Creator of [the gist that allowed this package to exist](https://gist.github.com/gustavopch/506a0651657b48e38a014a067e6bd221)
