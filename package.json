@@ -9,7 +9,8 @@
     "clean": "rm -rf dist",
     "build:clean": "npm run clean && npm run build",
     "link": "rm -rf $(which commitme) && npm run build:clean && npm link",
-    "start": "npm run build:clean && node dist/index.js"
+    "start": "npm run build:clean && node dist/index.js",
+    "prepack": "npm run build:clean"
   },
   "repository": {
     "type": "git",
