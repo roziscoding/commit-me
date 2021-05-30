@@ -1,6 +1,6 @@
 {
   "name": "commitme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple git commit CLi",
   "main": "dist/index.js",
   "bin": "dist/index.js",
@@ -45,7 +45,9 @@
     "inquirer": "^8.1.0",
     "rc": "^1.2.8"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   }
