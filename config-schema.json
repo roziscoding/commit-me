@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$ref": "#/definitions/Config",
+    "definitions": {
+        "Config": {
+            "type": "object",
+            "properties": {
+                "choices": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Choice"
+                    },
+                    "description": "List of choices for the current folder."
+                },
+                "replaceDefaultChoices": {
+                    "type": "boolean",
+                    "description": "Wether to merge with or replace default choices."
+                },
+                "a": {
+                    "type": "boolean",
+                    "description": "If true, runs `git add --all` before commiting. Intended for usage as a CLI flag."
+                },
+                "print": {
+                    "type": "boolean",
+                    "description": "If true, only prints the generated commit message instead of calling git."
+                }
+            },
+            "additionalItems": false
+        },
+        "Choice": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of the choice to show to the user."
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The emoji that represents the choice"
+                },
+                "short": {
+                    "type": "string",
+                    "description": "The short form of the name of the choice."
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
